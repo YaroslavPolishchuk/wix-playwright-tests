@@ -1,6 +1,6 @@
 import { Page } from '@playwright/test'
 import { HomePage } from '../pages/HomePage'
-import { ProductPage } from '../pages/productPage';
+import { ProductPage } from '../pages/ProductPage';
 import { CartPage } from '../pages/CartPage';
 
 export class PageFactory {
