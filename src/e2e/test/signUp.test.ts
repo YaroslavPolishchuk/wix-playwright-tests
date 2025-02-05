@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
-import { PageFactory } from "../factories/pageFactory";
-import { UserFactory } from "../factories/userFactory";
+import { PageFactory } from "../factories/PageFactory";
+import { UserFactory } from "../factories/UserFactory";
 import _ from "lodash";
 
 test("Successful Sign-Up", async ({ page }) => {    

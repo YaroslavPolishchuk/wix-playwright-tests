@@ -1,7 +1,7 @@
 import { Page } from "playwright-core";
 import { BasePage } from "../base/BasePage";
 import { User } from "../models/User";
-import { HomePageElements } from "./elements/homePageElements";
+import { HomePageElements } from "./elements/HomePageElements";
 
 
 export class HomePage extends BasePage {

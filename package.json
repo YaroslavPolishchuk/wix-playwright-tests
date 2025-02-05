@@ -8,14 +8,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
+  "description": "",  
+  "dependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "lodash": "^4.17.21",
     "@playwright/test": "^1.50.1",
     "@types/lodash": "^4.17.15",
     "@types/node": "^22.13.1"
-  },
-  "dependencies": {
-    "@faker-js/faker": "^9.4.0",
-    "lodash": "^4.17.21"
   }
 }
