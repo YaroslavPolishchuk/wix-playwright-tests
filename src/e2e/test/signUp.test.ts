@@ -5,16 +5,7 @@ import _ from "lodash";
 
 test("Successful Sign-Up", async ({ page }) => {    
 
-    // // Set network throttling (for example, 3G Slowdown)
-    // const session = await page.context().newCDPSession(page);
-    // await session.send('Network.emulateNetworkConditions', {
-    //     offline: false, // or true to simulate offline
-    //     downloadThroughput: 1 * 1024 * 1024, // 1 Mbps download
-    //     uploadThroughput: 1 * 1024 * 1024,   // 1 Mbps upload
-    //     latency: 150 // 150 ms network latency
-    // });
-
-    //pages
+    //pages init
     const testUser = UserFactory.getUser()
     const homePage = PageFactory.getHomePage(page);
     const productPage = PageFactory.getProductPage(page);
