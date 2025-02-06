@@ -1,12 +1,43 @@
 export class User{
 
-    name:string;
-    password:string;
-    _itemsInCart:Array<string>;
+    private _name:string;
+    private _password:string;
+    private _itemsInCart:Array<string>;
+    private _country: string;
+    public get country(): string {
+        return this._country;
+    }
+    
+    private _city: string;
+    public get city(): string {
+        return this._city;
+    }
+    
+    private _creditcard: string;
+    public get creditcard(): string {
+        return this._creditcard;
+    }
+    
+    private _month: string;
+    public get month(): string {
+        return this._month;
+    }
+    
+    private _year: number;
+    public get year(): number {
+        return this._year;
+    }
+    
+    
 
-    constructor(name:string,password:string){
-        this.name=name;
-        this.password=password;
+    constructor(name:string,password:string, country:string,city:string,creditcard:string,month:string,year:number){
+        this._name=name;
+        this._password=password;
+        this._country=country;
+        this._city=city;
+        this._creditcard=creditcard;
+        this._month=month;
+        this._year=year;
         this._itemsInCart=[];
     }    
 
@@ -26,10 +57,10 @@ export class User{
     }
 
     getName(): string {
-        return this.name;
+        return this._name;
     }
 
     getPassword(): string {
-        return this.password;
+        return this._password;
     }
 }

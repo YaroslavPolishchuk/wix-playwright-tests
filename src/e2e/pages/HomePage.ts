@@ -25,6 +25,11 @@ export class HomePage extends BasePage {
         await this.fillText(this.elements.passFld, user.getPassword());        
         await (await this.element(this.elements.logInModal)).click();        
     }
+    async logout(): Promise<void> {
+        await (await this.element(this.elements.logOut)).click();
+        
+        
+    }
 
     async selectRandomProduct():Promise<void>{                    
         let productsOnPage =await (await this.element(this.elements.product)).all();                

@@ -9,10 +9,12 @@ export const HomePageElements = {
     loginFld: "#loginusername",
     passFld: "#loginpassword",
     logInModal: "button[onclick='logIn()']",
+    logOut: "[onclick='logOut()']",
     product: ".card-title",
     previousBtn: "#prev2",
     nextBtn: "#next2",
     cartBtn:"#cartur",
+    loginModal:"//*[@id='logInModal']//*[@class='modal-body']",
 
     //xpath
     // signUpBtn:"//*[@id='signin2']",
